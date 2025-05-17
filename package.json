@@ -1,0 +1,35 @@
+{
+  "name": "ecommerce-eda",
+  "version": "1.0.0",
+  "description": "E-commerce system with Event-Driven Architecture using RabbitMQ with DLQ",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "ecommerce",
+    "eda",
+    "rabbitmq",
+    "dlq",
+    "event-driven"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/express": "^5.0.2",
+    "@types/jest": "^29.5.14",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  }
+}
