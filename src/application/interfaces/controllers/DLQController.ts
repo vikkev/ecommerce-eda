@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { MessageSubscriber } from '../../../infrastructure/messaging/subscriber/MessageSubscriber';
-import { logger } from '../../../config/rabbitmq.ts';
+import { logger } from '../../../config/rabbitmq';
 
 export class DLQController {
   private subscriber: MessageSubscriber;

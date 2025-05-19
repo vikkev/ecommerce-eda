@@ -25,7 +25,7 @@ export class OrderEventHandler implements MessageHandler {
           await this.handleOrderPaymentProcessed(event);
           break;
         default:
-          logger.warn(`Unknown event type: ${event.eventType}`, { eventId: event.eventId });
+          logger.warn(`Unknown event type: ${(event as EcommerceEvent).eventType}`, { eventId: (event as EcommerceEvent).eventId });
           // Aqui poderíamos lançar um erro para forçar a mensagem para a DLQ
           // throw new Error(`Unknown event type: ${event.eventType}`);
       }

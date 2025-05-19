@@ -1,5 +1,5 @@
 import { Order, OrderStatus } from '../../domain/entities/Order';
-import { logger } from '../../config/rabbitmq.ts';
+import { logger } from '../../config/rabbitmq';
 
 // Interface simulada para repositório de pedidos
 interface OrderRepository {

@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { MessagePublisher } from '../../../infrastructure/messaging/publisher/MessagePublisher';
 import { OrderService } from '../../services/OrderService';
-import { logger } from '../../config/rabbitmq';
+import { logger } from '../../../config/rabbitmq';
 
 export class OrderController {
   private publisher: MessagePublisher;
